@@ -17,7 +17,7 @@
     $j = 0;    
     foreach($array_all as $element)
     {
-        if(( $element))
+        if(is_int($element))
         {
             $int_array[$k] = $array_all[$j];
             $k++;
