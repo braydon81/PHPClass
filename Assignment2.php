@@ -8,7 +8,7 @@
     $k = 0;
     $L = 0;
     if ($handle) {
-        echo "arrach all";
+        echo "array all: ";
         while (($line = fgets($handle)) !== false) {
         $array_all[$i] = $line;
         echo $array_all[$i];
@@ -21,14 +21,13 @@
         {
             $int_array[$k] = $array_all[$j];
             $k++;
-            $j++;
         }
         else
         {
             $string_array[$L] = $array_all[$j];
             $L++;
-            $j++;
         }
+        $j++;
     }
         
     echo nl2br("\nInt array: ");
